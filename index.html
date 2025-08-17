@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Software Developer & ISO Consultant</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <h2>MyPortfolio</h2>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#booking">Booking</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle">Light Mode</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <h1>Hi, I'm Allan</h1>
+      <h3>
+        Software Developer | Personal Tutor|ISO 9001, 45001, 14001 Auditor and
+        Consultant | Mechanical Engineer
+      </h3>
+      <button id="whatsapp">
+        <i class="fab fa-whatsapp" style="font-size: 30px; color: green"></i>
+        Click to chat
+      </button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <img src="https://via.placeholder.com/280" alt="Profile Picture" />
+      <div>
+        <h2>About Me</h2>
+        <p>
+          I am a passionate software developer specializing in high-quality
+          applications and also an ISO consultant helping businesses implement
+          and certify international standards.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skill-list">
+        <div class="skill-item">HTML</div>
+        <div class="skill-item">CSS</div>
+        <div class="skill-item">JavaScript</div>
+        <div class="skill-item">React</div>
+        <div class="skill-item">Node.js</div>
+        <div class="skill-item">Python</div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="https://via.placeholder.com/400x200" alt="Project 1" />
+          <div>
+            <h3>Project One</h3>
+            <p>A web app that solves XYZ problem with modern technology.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="https://via.placeholder.com/400x200" alt="Project 2" />
+          <div>
+            <h3>Project Two</h3>
+            <p>A mobile-friendly dashboard for managing workflows.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking">
+      <h2>Book ISO Consulting</h2>
+      <p>
+        Consultation fee: <strong>$100</strong> (to be paid before confirmation)
+      </p>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="date" required />
+        <input type="time" required />
+        <select required>
+          <option value="">Select Service</option>
+          <option value="iso-9001">ISO 9001 Implementation</option>
+          <option value="iso-27001">ISO 27001 Security</option>
+          <option value="iso-14001">ISO 14001 Environmental</option>
+        </select>
+        <button type="submit">Book Appointment</button>
+      </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Allan | All rights reserved.</p>
+    </footer>
+    <script src="/script.js"></script>
+  </body>
+</html>
