@@ -53,7 +53,7 @@ body.light nav {
 }
 
 nav h2 {
-  color: #38bdf8;
+  color: orange;
 }
 
 nav ul {
@@ -70,7 +70,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #38bdf8;
+  color: orange;
 }
 
 /* Toggle Button */
@@ -79,7 +79,7 @@ nav ul li a:hover {
   padding: 6px 15px;
   border: none;
   border-radius: 20px;
-  background: #38bdf8;
+  background: orange;
   color: #0f172a;
   cursor: pointer;
   font-weight: bold;
@@ -107,7 +107,7 @@ body.light #hero {
 
 #hero h1 {
   font-size: 3rem;
-  color: #38bdf8;
+  color: orange;
 }
 
 #hero h3 {
@@ -124,7 +124,7 @@ body.light #hero h3 {
   padding: 12px 25px;
   border: none;
   border-radius: 25px;
-  background: #38bdf8;
+  background: orange;
   color: #0f172a;
   font-weight: bold;
   cursor: pointer;
@@ -146,7 +146,7 @@ body.light #hero h3 {
 #about img {
   width: 280px;
   border-radius: 50%;
-  border: 4px solid #38bdf8;
+  border: 4px solid orange;
 }
 
 #about div {
@@ -240,7 +240,7 @@ body.light #booking {
   padding: 12px;
   border: none;
   border-radius: 8px;
-  background: #38bdf8;
+  background: orange;
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
@@ -271,7 +271,7 @@ body.light #booking {
   padding: 12px;
   border: none;
   border-radius: 8px;
-  background: #38bdf8;
+  background: orange;
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
