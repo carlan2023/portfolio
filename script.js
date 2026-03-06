@@ -1,33 +1,101 @@
-const toggleBtn = document.getElementById("theme-toggle");
-toggleBtn.addEventListener("click", () => {
-  document.body.classList.toggle("light");
-  if (document.body.classList.contains("light")) {
-    toggleBtn.textContent = "Dark Mode";
-  } else {
-    toggleBtn.textContent = "Light Mode";
+/* ═══════════════════════════════════════════
+   Allan Mitanda Portfolio — script.js
+   ═══════════════════════════════════════════ */
+
+(function () {
+  'use strict';
+
+  /* ── NAV: scroll shadow ── */
+  var navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 20) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  }, { passive: true });
+
+  /* ── NAV: active section highlight ── */
+  var sections = document.querySelectorAll('section[id]');
+  var navLinks = document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll', function () {
+    var current = '';
+    sections.forEach(function (sec) {
+      if (window.scrollY >= sec.offsetTop - 90) {
+        current = sec.id;
+      }
+    });
+    navLinks.forEach(function (link) {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + current) {
+        link.classList.add('active');
+      }
+    });
+  }, { passive: true });
+
+  /* ── NAV: mobile toggle ── */
+  var navToggle = document.getElementById('navToggle');
+  var navLinksList = document.getElementById('navLinks');
+  navToggle.addEventListener('click', function () {
+    navLinksList.classList.toggle('open');
+  });
+  navLinksList.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () {
+      navLinksList.classList.remove('open');
+    });
+  });
+
+  /* ── FADE-UP: scroll reveal ── */
+  var fadeObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        fadeObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(function (el) {
+    fadeObserver.observe(el);
+  });
+
+  /* ── SKILL BARS: animate on view ── */
+  var skillsSection = document.getElementById('skillsSection');
+  var skillsAnimated = false;
+  if (skillsSection) {
+    var skillObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting && !skillsAnimated) {
+          skillsAnimated = true;
+          document.querySelectorAll('.skill-fill').forEach(function (bar) {
+            var target = bar.getAttribute('data-w');
+            if (target) bar.style.width = target + '%';
+          });
+          skillObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    skillObserver.observe(skillsSection);
   }
-});
 
-// Booking form placeholder
-const bookingForm = document.querySelector("#booking form");
-bookingForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-  alert(
-    "Your booking has been submitted! We will contact you with payment details."
-  );
-});
+  /* ── HERO PHOTO: fallback placeholder ── */
+  var heroPhoto = document.getElementById('heroPhoto');
+  var photoPlaceholder = document.getElementById('photoPlaceholder');
+  if (heroPhoto && photoPlaceholder) {
+    heroPhoto.addEventListener('error', function () {
+      heroPhoto.style.display = 'none';
+      photoPlaceholder.style.display = 'flex';
+    });
+  }
 
-function whatsappMe() {
-  // Replace with YOUR phone number (international format, no + or spaces)
-  const phoneNumber = "256787963708";
-  const message =
-    "Hello Allan, I got your number from your website. Are you available to chat?";
+  /* ── SMOOTH SCROLL ── */
+  document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+    anchor.addEventListener('click', function (e) {
+      var target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
 
-  // Encode message for URL
-  const encodedMessage = encodeURIComponent(message);
-
-  // Open WhatsApp chat
-  window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
-}
-
-document.getElementById("whatsapp").addEventListener("onclick", whatsappMe);
+})();
