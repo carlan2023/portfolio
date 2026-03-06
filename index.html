@@ -1,416 +1,825 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Allan Mitanda — QHSE Consultant & Software Engineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Mulish:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <!-- NAV -->
-  <nav id="navbar">
-    <div class="nav-inner">
-      <a href="#hero" class="nav-logo">Allan Mitanda</a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#about">About</a></li>
-        <li><a href="#expertise">Expertise</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#certifications">Credentials</a></li>
-        <li><a href="#contact" class="nav-cta">Contact</a></li>
-      </ul>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <section id="hero">
-    <div class="hero-inner">
-      <div class="hero-text">
-        <p class="hero-eyebrow">QHSE Lead Consultant &nbsp;·&nbsp; ISO Lead Auditor &nbsp;·&nbsp; Software Developer</p>
-        <h1 class="hero-name">Allan <span>Mitanda</span></h1>
-        <p class="hero-desc">
-          Mechanical engineer bridging quality management systems and software development. I implement ISO standards, train lead auditors, engineer networks, and build software — delivering end-to-end technical and compliance solutions across East Africa.
-        </p>
-        <div class="hero-actions">
-          <a href="#experience" class="btn btn-primary">View Experience</a>
-          <a href="#contact" class="btn btn-outline">Get in Touch</a>
-        </div>
-        <div class="hero-tags">
-          <span class="htag">ISO 9001</span>
-          <span class="htag">ISO 14001</span>
-          <span class="htag">ISO 45001</span>
-          <span class="htag">ISO 22000</span>
-          <span class="htag">Python</span>
-          <span class="htag">JavaScript</span>
-          <span class="htag">CISCO</span>
-          <span class="htag">C++</span>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Allan Mitanda — QHSE Consultant & Software Engineer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Mulish:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav id="navbar">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo">Allan Mitanda</a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#expertise">Expertise</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Credentials</a></li>
+          <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-      <div class="hero-right">
-        <div class="hero-photo-wrap">
-          <!-- Replace profile.jpg with your actual image filename in the images/ folder -->
-          <img src="images/profile.jpg" alt="Allan Mitanda" class="hero-photo" id="heroPhoto" />
-          <div class="hero-photo-placeholder" id="photoPlaceholder" style="display:none;">
-            <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-            <p>Add photo to images/ folder</p>
-          </div>
-        </div>
-        <div class="hero-stats">
-          <div class="hstat">
-            <span class="hstat-n">12+</span>
-            <span class="hstat-l">Lead Auditors Trained</span>
-          </div>
-          <div class="hstat">
-            <span class="hstat-n">98.9%</span>
-            <span class="hstat-l">Network Uptime Achieved</span>
-          </div>
-          <div class="hstat">
-            <span class="hstat-n">5+</span>
-            <span class="hstat-l">ISO Standards Certified</span>
-          </div>
-          <div class="hstat">
-            <span class="hstat-n">3.6</span>
-            <span class="hstat-l">University CGPA</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- ABOUT -->
-  <section id="about" class="section section-white">
-    <div class="container">
-      <div class="section-label">01 — About</div>
-      <div class="about-grid">
-        <div class="about-bio">
-          <h2 class="section-title">Who I Am</h2>
-          <p>I am a Mechanical Engineering graduate from Makerere University with a rare combination of <strong>ISO management systems expertise</strong> and <strong>hands-on software development</strong> capability. I operate at the intersection of compliance, engineering, and technology.</p>
-          <p>Since 2023, I have trained over 12 Lead Auditors, implemented ISO management systems for major Ugandan organisations, managed enterprise IT infrastructure, and built software projects across Python, JavaScript and C++.</p>
-          <p>I also founded <strong>ECAFU Initiative Uganda</strong> — a nonprofit focused on youth and women empowerment through education and entrepreneurship in Kyotera District.</p>
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="hero-eyebrow">
+            QHSE Lead Consultant &nbsp;·&nbsp; ISO Lead Auditor &nbsp;·&nbsp;
+            Software Developer
+          </p>
+          <h1 class="hero-name">Allan <span>Mitanda</span></h1>
+          <p class="hero-desc">
+            Mechanical engineer bridging quality management systems and software
+            development. I implement ISO standards, train lead auditors,
+            engineer networks, and build software — delivering end-to-end
+            technical and compliance solutions across East Africa.
+          </p>
+          <div class="hero-actions">
+            <a href="#experience" class="btn btn-primary">View Experience</a>
+            <a href="#contact" class="btn btn-outline">Get in Touch</a>
+          </div>
+          <div class="hero-tags">
+            <span class="htag">ISO 9001</span>
+            <span class="htag">ISO 14001</span>
+            <span class="htag">ISO 45001</span>
+            <span class="htag">ISO 22000</span>
+            <span class="htag">Python</span>
+            <span class="htag">JavaScript</span>
+            <span class="htag">CISCO</span>
+            <span class="htag">C++</span>
+          </div>
         </div>
-        <div class="about-sidebar">
-          <div class="info-block">
-            <h4 class="info-title">Contact</h4>
-            <div class="info-row">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              <a href="mailto:mitandalan2017@gmail.com">mitandalan2017@gmail.com</a>
+        <div class="hero-right">
+          <div class="hero-photo-wrap">
+            <!-- Replace profile.jpg with your actual image filename in the images/ folder -->
+            <img
+              src="images/poster.jpg"
+              alt="Allan Mitanda"
+              class="hero-photo"
+              id="heroPhoto"
+            />
+            <div
+              class="hero-photo-placeholder"
+              id="photoPlaceholder"
+              style="display: none"
+            >
+              <svg
+                width="52"
+                height="52"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1"
+              >
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+              <p>Add photo to images/ folder</p>
             </div>
-            <div class="info-row">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
-              <a href="tel:+256707068533">+256 707 068 533</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hstat">
+              <span class="hstat-n">12+</span>
+              <span class="hstat-l">Lead Auditors Trained</span>
             </div>
-            <div class="info-row">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              <span>Kampala, Uganda</span>
+            <div class="hstat">
+              <span class="hstat-n">98.9%</span>
+              <span class="hstat-l">Network Uptime Achieved</span>
             </div>
-            <div class="info-row">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-              <a href="https://linkedin.com/in/allanmitanda" target="_blank">linkedin.com/in/allanmitanda</a>
+            <div class="hstat">
+              <span class="hstat-n">5+</span>
+              <span class="hstat-l">ISO Standards Certified</span>
             </div>
-            <div class="info-row">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-              <a href="https://github.com/carlan2023" target="_blank">github.com/carlan2023</a>
+            <div class="hstat">
+              <span class="hstat-n">3.6</span>
+              <span class="hstat-l">University CGPA</span>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- EXPERTISE -->
-  <section id="expertise" class="section section-light">
-    <div class="container">
-      <div class="section-label">02 — Expertise</div>
-      <h2 class="section-title">Dual Expertise</h2>
-      <div class="expertise-grid">
-        <div class="exp-panel qhse-panel">
-          <div class="exp-panel-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+    <!-- ABOUT -->
+    <section id="about" class="section section-white">
+      <div class="container">
+        <div class="section-label">01 — About</div>
+        <div class="about-grid">
+          <div class="about-bio">
+            <h2 class="section-title">Who I Am</h2>
+            <p>
+              I am a Mechanical Engineering graduate from Makerere University
+              with a rare combination of
+              <strong>ISO management systems expertise</strong> and
+              <strong>hands-on software development</strong> capability. I
+              operate at the intersection of compliance, engineering, and
+              technology.
+            </p>
+            <p>
+              Since 2023, I have trained over 12 Lead Auditors, implemented ISO
+              management systems for major Ugandan organisations, managed
+              enterprise IT infrastructure, and built software projects across
+              Python, JavaScript and C++.
+            </p>
+            <p>
+              I also founded <strong>ECAFU Initiative Uganda</strong> — a
+              nonprofit focused on youth and women empowerment through education
+              and entrepreneurship in Kyotera District.
+            </p>
           </div>
-          <h3>QHSE &amp; ISO Management</h3>
-          <p>Certified Lead Auditor across five ISO standards. I implement management systems, train audit teams, and guide organisations through gap analysis to full certification.</p>
-          <ul>
-            <li>ISO 9001 · 14001 · 45001 · 22000 · 17025</li>
-            <li>Lead Auditor &amp; Internal Auditor Training</li>
-            <li>Management Review Facilitation</li>
-            <li>ESHS Auditing &amp; Non-conformance Reporting</li>
-            <li>Food Safety Management Systems</li>
-          </ul>
-        </div>
-        <div class="exp-panel dev-panel">
-          <div class="exp-panel-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          <div class="about-sidebar">
+            <div class="info-block">
+              <h4 class="info-title">Contact</h4>
+              <div class="info-row">
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                <a href="mailto:mitandalan2017@gmail.com"
+                  >mitandalan2017@gmail.com</a
+                >
+              </div>
+              <div class="info-row">
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"
+                  />
+                </svg>
+                <a href="tel:+256707068533">+256 707 068 533</a>
+              </div>
+              <div class="info-row">
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <span>Kampala, Uganda</span>
+              </div>
+              <div class="info-row">
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+                <a href="https://linkedin.com/in/allanmitanda" target="_blank"
+                  >linkedin.com/in/allanmitanda</a
+                >
+              </div>
+              <div class="info-row">
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                  />
+                </svg>
+                <a href="https://github.com/carlan2023" target="_blank"
+                  >github.com/carlan2023</a
+                >
+              </div>
+            </div>
           </div>
-          <h3>Software &amp; Network Engineering</h3>
-          <p>Self-taught full-stack developer and network engineer. I build real applications, manage enterprise infrastructure, and integrate cloud platforms with a growing focus on data science.</p>
-          <ul>
-            <li>Python · JavaScript · C++ · Java (learning)</li>
-            <li>CISCO Networking &amp; Infrastructure</li>
-            <li>IBM Cloud Pak &amp; Aspera Integration</li>
-            <li>Full-Stack Web Development</li>
-            <li>CRM Systems &amp; IT Administration</li>
-          </ul>
         </div>
       </div>
+    </section>
 
-      <!-- Skills -->
-      <div class="skills-wrap" id="skillsSection">
-        <div class="skills-col">
-          <h4 class="skills-heading qhse-heading">QHSE &amp; Management</h4>
-          <div class="skill-row"><span class="skill-label">ISO Lead Auditing</span><div class="skill-track"><div class="skill-fill qfill" data-w="95"></div></div></div>
-          <div class="skill-row"><span class="skill-label">QMS / EMS / OHSMS</span><div class="skill-track"><div class="skill-fill qfill" data-w="92"></div></div></div>
-          <div class="skill-row"><span class="skill-label">Food Safety (ISO 22000)</span><div class="skill-track"><div class="skill-fill qfill" data-w="90"></div></div></div>
-          <div class="skill-row"><span class="skill-label">Technical Documentation</span><div class="skill-track"><div class="skill-fill qfill" data-w="88"></div></div></div>
-          <div class="skill-row"><span class="skill-label">Project &amp; Agile Management</span><div class="skill-track"><div class="skill-fill qfill" data-w="84"></div></div></div>
-        </div>
-        <div class="skills-col">
-          <h4 class="skills-heading dev-heading">Software &amp; Technology</h4>
-          <div class="skill-row"><span class="skill-label">Network Engineering (CISCO)</span><div class="skill-track"><div class="skill-fill dfill" data-w="88"></div></div></div>
-          <div class="skill-row"><span class="skill-label">Python / JavaScript</span><div class="skill-track"><div class="skill-fill dfill" data-w="80"></div></div></div>
-          <div class="skill-row"><span class="skill-label">Full-Stack Development</span><div class="skill-track"><div class="skill-fill dfill" data-w="75"></div></div></div>
-          <div class="skill-row"><span class="skill-label">IBM Cloud Pak / Aspera</span><div class="skill-track"><div class="skill-fill dfill" data-w="78"></div></div></div>
-          <div class="skill-row"><span class="skill-label">C++ / Game Development</span><div class="skill-track"><div class="skill-fill dfill" data-w="65"></div></div></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience" class="section section-white">
-    <div class="container">
-      <div class="section-label">03 — Career</div>
-      <h2 class="section-title">Professional Experience</h2>
-      <div class="timeline">
-
-        <div class="tl-item fade-up">
-          <div class="tl-left">
-            <span class="tl-date">Aug 2023 – Present</span>
-            <span class="tl-tag tag-both">QHSE · IT</span>
+    <!-- EXPERTISE -->
+    <section id="expertise" class="section section-light">
+      <div class="container">
+        <div class="section-label">02 — Expertise</div>
+        <h2 class="section-title">Dual Expertise</h2>
+        <div class="expertise-grid">
+          <div class="exp-panel qhse-panel">
+            <div class="exp-panel-icon">
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                />
+              </svg>
+            </div>
+            <h3>QHSE &amp; ISO Management</h3>
+            <p>
+              Certified Lead Auditor across five ISO standards. I implement
+              management systems, train audit teams, and guide organisations
+              through gap analysis to full certification.
+            </p>
+            <ul>
+              <li>ISO 9001 · 14001 · 45001 · 22000 · 17025</li>
+              <li>Lead Auditor &amp; Internal Auditor Training</li>
+              <li>Management Review Facilitation</li>
+              <li>ESHS Auditing &amp; Non-conformance Reporting</li>
+              <li>Food Safety Management Systems</li>
+            </ul>
           </div>
-          <div class="tl-connector"><div class="tl-dot"></div></div>
-          <div class="tl-right">
-            <h3 class="tl-role">QHSE Lead Consultant &amp; IT Administrator</h3>
-            <p class="tl-org">IQS Management Systems Ltd &nbsp;·&nbsp; Kampala, Uganda</p>
-            <ul class="tl-list">
-              <li>Lead trainer for ISO 22000, 9001, 14001 and 45001 — certified 12+ Lead Auditors across Uganda.</li>
-              <li>Implemented ISO 22000 Food Management Systems for Export Trading Group Namanve and Supreme Flexibond Limited (2025).</li>
-              <li>Conducted ESHS and ISO 17025 internal audits; compiled observation and non-conformance reports.</li>
-              <li>Led Management Review meetings guiding clients through full compliance procedures.</li>
-              <li>Managed CRM, HR administration, client communications and sales pipeline.</li>
+          <div class="exp-panel dev-panel">
+            <div class="exp-panel-icon">
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <h3>Software &amp; Network Engineering</h3>
+            <p>
+              Self-taught full-stack developer and network engineer. I build
+              real applications, manage enterprise infrastructure, and integrate
+              cloud platforms with a growing focus on data science.
+            </p>
+            <ul>
+              <li>Python · JavaScript · C++ · Java (learning)</li>
+              <li>CISCO Networking &amp; Infrastructure</li>
+              <li>IBM Cloud Pak &amp; Aspera Integration</li>
+              <li>Full-Stack Web Development</li>
+              <li>CRM Systems &amp; IT Administration</li>
             </ul>
           </div>
         </div>
 
-        <div class="tl-item fade-up">
-          <div class="tl-left">
-            <span class="tl-date">Dec 2023 – Present</span>
-            <span class="tl-tag tag-qhse">QHSE</span>
-          </div>
-          <div class="tl-connector"><div class="tl-dot"></div></div>
-          <div class="tl-right">
-            <h3 class="tl-role">Quality Manager</h3>
-            <p class="tl-org">Terya Construction Laboratory &nbsp;·&nbsp; Uganda</p>
-            <ul class="tl-list">
-              <li>Maintains the ISO 17025 Quality Management System for an accredited testing laboratory.</li>
-              <li>Coordinates internal audits and Management Reviews per ISO 17025 requirements.</li>
-              <li>Drafts laboratory policies, procedures and equipment maintenance schedules.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="tl-item fade-up">
-          <div class="tl-left">
-            <span class="tl-date">Jan 2023 – Jul 2025</span>
-            <span class="tl-tag tag-dev">Technology</span>
-          </div>
-          <div class="tl-connector"><div class="tl-dot"></div></div>
-          <div class="tl-right">
-            <h3 class="tl-role">Network Engineering Associate</h3>
-            <p class="tl-org">Global West Technologies LLC &nbsp;·&nbsp; Uganda</p>
-            <ul class="tl-list">
-              <li>Led the IT team on outsourced network troubleshooting and client-site infrastructure management.</li>
-              <li>Drove network uptime from 84.6% to 98.9% through proactive monitoring and maintenance programmes.</li>
-              <li>Contributed to business development, technical proposal writing and partner outreach.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="tl-item fade-up">
-          <div class="tl-left">
-            <span class="tl-date">Nov 2023 – Feb 2025</span>
-            <span class="tl-tag tag-other">Remote · Sales</span>
-          </div>
-          <div class="tl-connector"><div class="tl-dot"></div></div>
-          <div class="tl-right">
-            <h3 class="tl-role">Customer Service Agent — Sales</h3>
-            <p class="tl-org">Dreamport – Trevolution &nbsp;·&nbsp; Remote</p>
-            <ul class="tl-list">
-              <li>Handled inbound inquiries for international flight bookings, rescheduling and ticketing.</li>
-              <li>Delivered real-time phone and email support in a high-volume air travel environment.</li>
-              <li>Maintained consistently high customer satisfaction scores.</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects" class="section section-light">
-    <div class="container">
-      <div class="section-label">04 — Software</div>
-      <h2 class="section-title">Software Projects</h2>
-      <div class="projects-grid">
-        <a href="https://github.com/carlan2023/Arena" target="_blank" class="proj-card fade-up">
-          <div class="proj-lang cpp">C++</div>
-          <h3>Arena</h3>
-          <p>Board game with staking mechanics built in C++ — demonstrating systems-level programming and game logic design.</p>
-          <span class="proj-link">View on GitHub →</span>
-        </a>
-        <a href="https://github.com/carlan2023/alx_be_python" target="_blank" class="proj-card fade-up">
-          <div class="proj-lang py">Python</div>
-          <h3>ALX Backend Python</h3>
-          <p>Backend Python coursework from the ALX Software Engineering programme — data structures, OOP and backend fundamentals.</p>
-          <span class="proj-link">View on GitHub →</span>
-        </a>
-        <a href="https://github.com/carlan2023/CSE-25-07-ST-ASSESSMENT" target="_blank" class="proj-card fade-up">
-          <div class="proj-lang js">JavaScript</div>
-          <h3>CSE Assessment</h3>
-          <p>JavaScript engineering assessment showcasing front-end logic, DOM manipulation and structured problem-solving.</p>
-          <span class="proj-link">View on GitHub →</span>
-        </a>
-        <a href="https://github.com/carlan2023/solar-project" target="_blank" class="proj-card fade-up">
-          <div class="proj-lang web">Web</div>
-          <h3>Solar Project</h3>
-          <p>Web-based solar energy project combining engineering domain knowledge with software to model and present solar energy data.</p>
-          <span class="proj-link">View on GitHub →</span>
-        </a>
-        <a href="https://github.com/carlan2023/Python" target="_blank" class="proj-card fade-up">
-          <div class="proj-lang py">Python</div>
-          <h3>Python Practicals</h3>
-          <p>Scripts covering data science fundamentals, scripting and algorithmic problem solving — part of an ongoing learning journey in Python, Java and R.</p>
-          <span class="proj-link">View on GitHub →</span>
-        </a>
-        <a href="https://github.com/carlan2023" target="_blank" class="proj-card proj-more fade-up">
-          <div class="proj-lang web">GitHub</div>
-          <h3>More Projects</h3>
-          <p>View all 27 repositories on GitHub — spanning utilities, engineering tools and experimental builds across disciplines.</p>
-          <span class="proj-link">View Profile →</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CERTIFICATIONS -->
-  <section id="certifications" class="section section-white">
-    <div class="container">
-      <div class="section-label">05 — Credentials</div>
-      <h2 class="section-title">Certifications &amp; Education</h2>
-      <div class="creds-grid">
-        <div>
-          <h4 class="creds-sub">Certifications</h4>
-          <div class="cert-list">
-            <div class="cert-row fade-up">
-              <div class="cert-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
-              <div><div class="cert-name">ISO 9001:2015 Lead Auditor</div><div class="cert-by">TNV / Exemplar Global · Feb 2026</div></div>
+        <!-- Skills -->
+        <div class="skills-wrap" id="skillsSection">
+          <div class="skills-col">
+            <h4 class="skills-heading qhse-heading">QHSE &amp; Management</h4>
+            <div class="skill-row">
+              <span class="skill-label">ISO Lead Auditing</span>
+              <div class="skill-track">
+                <div class="skill-fill qfill" data-w="95"></div>
+              </div>
             </div>
-            <div class="cert-row fade-up">
-              <div class="cert-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
-              <div><div class="cert-name">ISO 22000:2018 Lead Auditor</div><div class="cert-by">TNV / Exemplar Global · Feb 2026</div></div>
+            <div class="skill-row">
+              <span class="skill-label">QMS / EMS / OHSMS</span>
+              <div class="skill-track">
+                <div class="skill-fill qfill" data-w="92"></div>
+              </div>
             </div>
-            <div class="cert-row fade-up">
-              <div class="cert-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
-              <div><div class="cert-name">ISO 14001 &amp; 45001 Lead Auditor</div><div class="cert-by">IQS Uganda</div></div>
+            <div class="skill-row">
+              <span class="skill-label">Food Safety (ISO 22000)</span>
+              <div class="skill-track">
+                <div class="skill-fill qfill" data-w="90"></div>
+              </div>
             </div>
-            <div class="cert-row fade-up">
-              <div class="cert-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
-              <div><div class="cert-name">ISO 17025 Internal Auditor</div><div class="cert-by">IQS Uganda</div></div>
+            <div class="skill-row">
+              <span class="skill-label">Technical Documentation</span>
+              <div class="skill-track">
+                <div class="skill-fill qfill" data-w="88"></div>
+              </div>
             </div>
-            <div class="cert-row fade-up">
-              <div class="cert-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
-              <div><div class="cert-name">ALX Professional Foundations</div><div class="cert-by">ALX Africa</div></div>
-            </div>
-            <div class="cert-row fade-up">
-              <div class="cert-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
-              <div><div class="cert-name">IBM Aspera Technical Sales Intermediate</div><div class="cert-by">IBM</div></div>
-            </div>
-            <div class="cert-row fade-up">
-              <div class="cert-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
-              <div><div class="cert-name">IBM Cloud Pak for Integration Foundation V2</div><div class="cert-by">IBM</div></div>
-            </div>
-            <div class="cert-row fade-up">
-              <div class="cert-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
-              <div><div class="cert-name">UPG Sustainability Leadership</div><div class="cert-by">UPG</div></div>
+            <div class="skill-row">
+              <span class="skill-label">Project &amp; Agile Management</span>
+              <div class="skill-track">
+                <div class="skill-fill qfill" data-w="84"></div>
+              </div>
             </div>
           </div>
-        </div>
-        <div>
-          <h4 class="creds-sub">Education</h4>
-          <div class="edu-list">
-            <div class="edu-row fade-up">
-              <div class="edu-degree">BSc Mechanical Engineering</div>
-              <div class="edu-school">Makerere University, Kampala</div>
-              <div class="edu-meta">2016 – 2022 &nbsp;·&nbsp; CGPA 3.6</div>
+          <div class="skills-col">
+            <h4 class="skills-heading dev-heading">
+              Software &amp; Technology
+            </h4>
+            <div class="skill-row">
+              <span class="skill-label">Network Engineering (CISCO)</span>
+              <div class="skill-track">
+                <div class="skill-fill dfill" data-w="88"></div>
+              </div>
             </div>
-            <div class="edu-row fade-up">
-              <div class="edu-degree">Uganda Advanced Certificate of Education</div>
-              <div class="edu-school">St. Henry's College Kitovu</div>
-              <div class="edu-meta">2014 – 2015 &nbsp;·&nbsp; Physics, Economics, Maths &nbsp;·&nbsp; Grade 1</div>
+            <div class="skill-row">
+              <span class="skill-label">Python / JavaScript</span>
+              <div class="skill-track">
+                <div class="skill-fill dfill" data-w="80"></div>
+              </div>
             </div>
-            <div class="edu-row fade-up">
-              <div class="edu-degree">Uganda Certificate of Education</div>
-              <div class="edu-school">St. Henry's College Kitovu</div>
-              <div class="edu-meta">2010 – 2014 &nbsp;·&nbsp; Aggregate 23 &nbsp;·&nbsp; Result 1</div>
+            <div class="skill-row">
+              <span class="skill-label">Full-Stack Development</span>
+              <div class="skill-track">
+                <div class="skill-fill dfill" data-w="75"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <span class="skill-label">IBM Cloud Pak / Aspera</span>
+              <div class="skill-track">
+                <div class="skill-fill dfill" data-w="78"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <span class="skill-label">C++ / Game Development</span>
+              <div class="skill-track">
+                <div class="skill-fill dfill" data-w="65"></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section section-navy">
-    <div class="container">
-      <div class="contact-inner">
-        <div class="contact-left">
-          <div class="section-label light-label">07 — Contact</div>
-          <h2 class="contact-title">Let's Work Together</h2>
-          <p class="contact-sub">ISO implementation, network engineering, software development — or all three. Available for consulting, full-time roles and project-based work across East Africa and remotely.</p>
-          <div class="contact-btns">
-            <a href="mailto:mitandalan2017@gmail.com" class="btn btn-white">Email Me</a>
-            <a href="https://linkedin.com/in/allanmitanda" target="_blank" class="btn btn-ghost-white">LinkedIn</a>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section section-white">
+      <div class="container">
+        <div class="section-label">03 — Career</div>
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="timeline">
+          <div class="tl-item fade-up">
+            <div class="tl-left">
+              <span class="tl-date">Aug 2023 – Present</span>
+              <span class="tl-tag tag-both">QHSE · IT</span>
+            </div>
+            <div class="tl-connector"><div class="tl-dot"></div></div>
+            <div class="tl-right">
+              <h3 class="tl-role">
+                QHSE Lead Consultant &amp; IT Administrator
+              </h3>
+              <p class="tl-org">
+                IQS Management Systems Ltd &nbsp;·&nbsp; Kampala, Uganda
+              </p>
+              <ul class="tl-list">
+                <li>
+                  Lead trainer for ISO 22000, 9001, 14001 and 45001 — certified
+                  12+ Lead Auditors across Uganda.
+                </li>
+                <li>
+                  Implemented ISO 22000 Food Management Systems for Export
+                  Trading Group Namanve and Supreme Flexibond Limited (2025).
+                </li>
+                <li>
+                  Conducted ESHS and ISO 17025 internal audits; compiled
+                  observation and non-conformance reports.
+                </li>
+                <li>
+                  Led Management Review meetings guiding clients through full
+                  compliance procedures.
+                </li>
+                <li>
+                  Managed CRM, HR administration, client communications and
+                  sales pipeline.
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="contact-right">
-          <h4 class="ref-title">References</h4>
-          <div class="ref-card">
-            <div class="ref-name">Drey Alexander</div>
-            <div class="ref-role">CEO, Global West Technologies LLC</div>
-            <div class="ref-contact">ceo@globalwesttechnologies.org</div>
+
+          <div class="tl-item fade-up">
+            <div class="tl-left">
+              <span class="tl-date">Dec 2023 – Present</span>
+              <span class="tl-tag tag-qhse">QHSE</span>
+            </div>
+            <div class="tl-connector"><div class="tl-dot"></div></div>
+            <div class="tl-right">
+              <h3 class="tl-role">Quality Manager</h3>
+              <p class="tl-org">
+                Terya Construction Laboratory &nbsp;·&nbsp; Uganda
+              </p>
+              <ul class="tl-list">
+                <li>
+                  Maintains the ISO 17025 Quality Management System for an
+                  accredited testing laboratory.
+                </li>
+                <li>
+                  Coordinates internal audits and Management Reviews per ISO
+                  17025 requirements.
+                </li>
+                <li>
+                  Drafts laboratory policies, procedures and equipment
+                  maintenance schedules.
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="ref-card">
-            <div class="ref-name">Phillip L. Lubega</div>
-            <div class="ref-role">General Manager, IQS Management Systems Ltd</div>
-            <div class="ref-contact">info@iqsuganda.com</div>
+
+          <div class="tl-item fade-up">
+            <div class="tl-left">
+              <span class="tl-date">Jan 2023 – Jul 2025</span>
+              <span class="tl-tag tag-dev">Technology</span>
+            </div>
+            <div class="tl-connector"><div class="tl-dot"></div></div>
+            <div class="tl-right">
+              <h3 class="tl-role">Network Engineering Associate</h3>
+              <p class="tl-org">
+                Global West Technologies LLC &nbsp;·&nbsp; Uganda
+              </p>
+              <ul class="tl-list">
+                <li>
+                  Led the IT team on outsourced network troubleshooting and
+                  client-site infrastructure management.
+                </li>
+                <li>
+                  Drove network uptime from 84.6% to 98.9% through proactive
+                  monitoring and maintenance programmes.
+                </li>
+                <li>
+                  Contributed to business development, technical proposal
+                  writing and partner outreach.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tl-item fade-up">
+            <div class="tl-left">
+              <span class="tl-date">Nov 2023 – Feb 2025</span>
+              <span class="tl-tag tag-other">Remote · Sales</span>
+            </div>
+            <div class="tl-connector"><div class="tl-dot"></div></div>
+            <div class="tl-right">
+              <h3 class="tl-role">Customer Service Agent — Sales</h3>
+              <p class="tl-org">Dreamport – Trevolution &nbsp;·&nbsp; Remote</p>
+              <ul class="tl-list">
+                <li>
+                  Handled inbound inquiries for international flight bookings,
+                  rescheduling and ticketing.
+                </li>
+                <li>
+                  Delivered real-time phone and email support in a high-volume
+                  air travel environment.
+                </li>
+                <li>
+                  Maintained consistently high customer satisfaction scores.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    <div class="container footer-inner">
-      <span>© 2026 Allan Mitanda</span>
-      <span>Kampala, Uganda</span>
-    </div>
-  </footer>
+    <!-- PROJECTS -->
+    <section id="projects" class="section section-light">
+      <div class="container">
+        <div class="section-label">04 — Software</div>
+        <h2 class="section-title">Software Projects</h2>
+        <div class="projects-grid">
+          <a
+            href="https://github.com/carlan2023/Arena"
+            target="_blank"
+            class="proj-card fade-up"
+          >
+            <div class="proj-lang cpp">C++</div>
+            <h3>Arena</h3>
+            <p>
+              Board game with staking mechanics built in C++ — demonstrating
+              systems-level programming and game logic design.
+            </p>
+            <span class="proj-link">View on GitHub →</span>
+          </a>
+          <a
+            href="https://github.com/carlan2023/alx_be_python"
+            target="_blank"
+            class="proj-card fade-up"
+          >
+            <div class="proj-lang py">Python</div>
+            <h3>ALX Backend Python</h3>
+            <p>
+              Backend Python coursework from the ALX Software Engineering
+              programme — data structures, OOP and backend fundamentals.
+            </p>
+            <span class="proj-link">View on GitHub →</span>
+          </a>
+          <a
+            href="https://github.com/carlan2023/CSE-25-07-ST-ASSESSMENT"
+            target="_blank"
+            class="proj-card fade-up"
+          >
+            <div class="proj-lang js">JavaScript</div>
+            <h3>CSE Assessment</h3>
+            <p>
+              JavaScript engineering assessment showcasing front-end logic, DOM
+              manipulation and structured problem-solving.
+            </p>
+            <span class="proj-link">View on GitHub →</span>
+          </a>
+          <a
+            href="https://github.com/carlan2023/solar-project"
+            target="_blank"
+            class="proj-card fade-up"
+          >
+            <div class="proj-lang web">Web</div>
+            <h3>Solar Project</h3>
+            <p>
+              Web-based solar energy project combining engineering domain
+              knowledge with software to model and present solar energy data.
+            </p>
+            <span class="proj-link">View on GitHub →</span>
+          </a>
+          <a
+            href="https://github.com/carlan2023/Python"
+            target="_blank"
+            class="proj-card fade-up"
+          >
+            <div class="proj-lang py">Python</div>
+            <h3>Python Practicals</h3>
+            <p>
+              Scripts covering data science fundamentals, scripting and
+              algorithmic problem solving — part of an ongoing learning journey
+              in Python, Java and R.
+            </p>
+            <span class="proj-link">View on GitHub →</span>
+          </a>
+          <a
+            href="https://github.com/carlan2023"
+            target="_blank"
+            class="proj-card proj-more fade-up"
+          >
+            <div class="proj-lang web">GitHub</div>
+            <h3>More Projects</h3>
+            <p>
+              View all 27 repositories on GitHub — spanning utilities,
+              engineering tools and experimental builds across disciplines.
+            </p>
+            <span class="proj-link">View Profile →</span>
+          </a>
+        </div>
+      </div>
+    </section>
 
-  <script src="script.js"></script>
-</body>
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section section-white">
+      <div class="container">
+        <div class="section-label">05 — Credentials</div>
+        <h2 class="section-title">Certifications &amp; Education</h2>
+        <div class="creds-grid">
+          <div>
+            <h4 class="creds-sub">Certifications</h4>
+            <div class="cert-list">
+              <div class="cert-row fade-up">
+                <div class="cert-icon">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="cert-name">ISO 9001:2015 Lead Auditor</div>
+                  <div class="cert-by">TNV / Exemplar Global · Feb 2026</div>
+                </div>
+              </div>
+              <div class="cert-row fade-up">
+                <div class="cert-icon">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="cert-name">ISO 22000:2018 Lead Auditor</div>
+                  <div class="cert-by">TNV / Exemplar Global · Feb 2026</div>
+                </div>
+              </div>
+              <div class="cert-row fade-up">
+                <div class="cert-icon">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="cert-name">
+                    ISO 14001 &amp; 45001 Lead Auditor
+                  </div>
+                  <div class="cert-by">IQS Uganda</div>
+                </div>
+              </div>
+              <div class="cert-row fade-up">
+                <div class="cert-icon">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="cert-name">ISO 17025 Internal Auditor</div>
+                  <div class="cert-by">IQS Uganda</div>
+                </div>
+              </div>
+              <div class="cert-row fade-up">
+                <div class="cert-icon">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="cert-name">ALX Professional Foundations</div>
+                  <div class="cert-by">ALX Africa</div>
+                </div>
+              </div>
+              <div class="cert-row fade-up">
+                <div class="cert-icon">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="cert-name">
+                    IBM Aspera Technical Sales Intermediate
+                  </div>
+                  <div class="cert-by">IBM</div>
+                </div>
+              </div>
+              <div class="cert-row fade-up">
+                <div class="cert-icon">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="cert-name">
+                    IBM Cloud Pak for Integration Foundation V2
+                  </div>
+                  <div class="cert-by">IBM</div>
+                </div>
+              </div>
+              <div class="cert-row fade-up">
+                <div class="cert-icon">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="cert-name">UPG Sustainability Leadership</div>
+                  <div class="cert-by">UPG</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h4 class="creds-sub">Education</h4>
+            <div class="edu-list">
+              <div class="edu-row fade-up">
+                <div class="edu-degree">BSc Mechanical Engineering</div>
+                <div class="edu-school">Makerere University, Kampala</div>
+                <div class="edu-meta">2016 – 2022 &nbsp;·&nbsp; CGPA 3.6</div>
+              </div>
+              <div class="edu-row fade-up">
+                <div class="edu-degree">
+                  Uganda Advanced Certificate of Education
+                </div>
+                <div class="edu-school">St. Henry's College Kitovu</div>
+                <div class="edu-meta">
+                  2014 – 2015 &nbsp;·&nbsp; Physics, Economics, Maths
+                  &nbsp;·&nbsp; Grade 1
+                </div>
+              </div>
+              <div class="edu-row fade-up">
+                <div class="edu-degree">Uganda Certificate of Education</div>
+                <div class="edu-school">St. Henry's College Kitovu</div>
+                <div class="edu-meta">
+                  2010 – 2014 &nbsp;·&nbsp; Aggregate 23 &nbsp;·&nbsp; Result 1
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-navy">
+      <div class="container">
+        <div class="contact-inner">
+          <div class="contact-left">
+            <div class="section-label light-label">07 — Contact</div>
+            <h2 class="contact-title">Let's Work Together</h2>
+            <p class="contact-sub">
+              ISO implementation, network engineering, software development — or
+              all three. Available for consulting, full-time roles and
+              project-based work across East Africa and remotely.
+            </p>
+            <div class="contact-btns">
+              <a href="mailto:mitandalan2017@gmail.com" class="btn btn-white"
+                >Email Me</a
+              >
+              <a
+                href="https://linkedin.com/in/allanmitanda"
+                target="_blank"
+                class="btn btn-ghost-white"
+                >LinkedIn</a
+              >
+            </div>
+          </div>
+          <div class="contact-right">
+            <h4 class="ref-title">References</h4>
+            <div class="ref-card">
+              <div class="ref-name">Drey Alexander</div>
+              <div class="ref-role">CEO, Global West Technologies LLC</div>
+              <div class="ref-contact">ceo@globalwesttechnologies.org</div>
+            </div>
+            <div class="ref-card">
+              <div class="ref-name">Phillip L. Lubega</div>
+              <div class="ref-role">
+                General Manager, IQS Management Systems Ltd
+              </div>
+              <div class="ref-contact">info@iqsuganda.com</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer-inner">
+        <span>© 2026 Allan Mitanda</span>
+        <span>Kampala, Uganda</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
