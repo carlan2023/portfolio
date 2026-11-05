@@ -1,101 +1,94 @@
-/* ═══════════════════════════════════════════
-   Allan Mitanda Portfolio — script.js
-   ═══════════════════════════════════════════ */
-
 (function () {
-  'use strict';
+  "use strict";
 
-  /* ── NAV: scroll shadow ── */
-  var navbar = document.getElementById('navbar');
-  window.addEventListener('scroll', function () {
-    if (window.scrollY > 20) {
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
+  var navbar = document.getElementById("navbar");
+  var toggle = document.getElementById("navToggle");
+  var menu = document.getElementById("navLinks");
+  var links = menu.querySelectorAll("a");
+
+  var sticky = document.querySelector(".wa-sticky");
+  var contact = document.getElementById("contact");
+  var hero = document.getElementById("top");
+  var menuLabel = toggle.querySelector(".sr-only");
+
+  function syncSticky() {
+    if (!sticky) return;
+    var menuOpen = toggle.getAttribute("aria-expanded") === "true";
+    var pastHero = hero ? window.scrollY > hero.offsetHeight * 0.72 : window.scrollY > 640;
+    var contactNear = false;
+    if (contact) {
+      contactNear = contact.getBoundingClientRect().top < window.innerHeight * 0.7;
     }
-  }, { passive: true });
-
-  /* ── NAV: active section highlight ── */
-  var sections = document.querySelectorAll('section[id]');
-  var navLinks = document.querySelectorAll('.nav-links a');
-  window.addEventListener('scroll', function () {
-    var current = '';
-    sections.forEach(function (sec) {
-      if (window.scrollY >= sec.offsetTop - 90) {
-        current = sec.id;
-      }
-    });
-    navLinks.forEach(function (link) {
-      link.classList.remove('active');
-      if (link.getAttribute('href') === '#' + current) {
-        link.classList.add('active');
-      }
-    });
-  }, { passive: true });
-
-  /* ── NAV: mobile toggle ── */
-  var navToggle = document.getElementById('navToggle');
-  var navLinksList = document.getElementById('navLinks');
-  navToggle.addEventListener('click', function () {
-    navLinksList.classList.toggle('open');
-  });
-  navLinksList.querySelectorAll('a').forEach(function (link) {
-    link.addEventListener('click', function () {
-      navLinksList.classList.remove('open');
-    });
-  });
-
-  /* ── FADE-UP: scroll reveal ── */
-  var fadeObserver = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        fadeObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1 });
-  document.querySelectorAll('.fade-up').forEach(function (el) {
-    fadeObserver.observe(el);
-  });
-
-  /* ── SKILL BARS: animate on view ── */
-  var skillsSection = document.getElementById('skillsSection');
-  var skillsAnimated = false;
-  if (skillsSection) {
-    var skillObserver = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting && !skillsAnimated) {
-          skillsAnimated = true;
-          document.querySelectorAll('.skill-fill').forEach(function (bar) {
-            var target = bar.getAttribute('data-w');
-            if (target) bar.style.width = target + '%';
-          });
-          skillObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.2 });
-    skillObserver.observe(skillsSection);
+    var show = window.innerWidth <= 1040 && !menuOpen && pastHero && !contactNear;
+    sticky.classList.toggle("is-hidden", !show);
   }
 
-  /* ── HERO PHOTO: fallback placeholder ── */
-  var heroPhoto = document.getElementById('heroPhoto');
-  var photoPlaceholder = document.getElementById('photoPlaceholder');
-  if (heroPhoto && photoPlaceholder) {
-    heroPhoto.addEventListener('error', function () {
-      heroPhoto.style.display = 'none';
-      photoPlaceholder.style.display = 'flex';
-    });
+  function setOpen(open) {
+    menu.classList.toggle("is-open", open);
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    document.body.classList.toggle("nav-open", open);
+    if (menuLabel) menuLabel.textContent = open ? "Close menu" : "Menu";
+    syncSticky();
   }
 
-  /* ── SMOOTH SCROLL ── */
-  document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
-    anchor.addEventListener('click', function (e) {
-      var target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
+  toggle.addEventListener("click", function () {
+    var open = toggle.getAttribute("aria-expanded") !== "true";
+    setOpen(open);
+  });
+
+  links.forEach(function (link) {
+    link.addEventListener("click", function () {
+      setOpen(false);
     });
   });
 
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") {
+      setOpen(false);
+      toggle.focus();
+    }
+  });
+
+  document.addEventListener("click", function (event) {
+    if (toggle.getAttribute("aria-expanded") !== "true") return;
+    if (!navbar.contains(event.target)) setOpen(false);
+  });
+
+  window.addEventListener("resize", function () {
+    if (window.innerWidth > 1040) setOpen(false);
+  });
+
+  function onScroll() {
+    navbar.classList.toggle("scrolled", window.scrollY > 8);
+    syncSticky();
+  }
+
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", syncSticky);
+
+  var sections = Array.prototype.slice.call(document.querySelectorAll("main section[id]"));
+  var sectionLinks = Array.prototype.slice.call(links).filter(function (link) {
+    return link.getAttribute("href").charAt(0) === "#";
+  });
+
+  if ("IntersectionObserver" in window) {
+    var current = "";
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) current = entry.target.id;
+        });
+        sectionLinks.forEach(function (link) {
+          var active = link.getAttribute("href") === "#" + current;
+          if (active) link.setAttribute("aria-current", "true");
+          else link.removeAttribute("aria-current");
+        });
+      },
+      { rootMargin: "-40% 0px -50% 0px", threshold: 0.01 }
+    );
+    sections.forEach(function (section) {
+      observer.observe(section);
+    });
+  }
 })();
